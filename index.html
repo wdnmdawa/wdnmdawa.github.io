@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>滚动的滑稽 - 官方下载页</title>
+    <title>滚动的滑稽 - 官方QQ群下载页</title>
     <style>
         :root {
             --primary-color: #ff6b6b;
@@ -33,41 +33,48 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
 
-        .social-links {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
+        .qq-group-badge {
+            background-color: #fff0f3;
+            color: #d32f2f;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>滚动的滑稽 - 官方下载页</h1>
+        <h1>滚动的滑稽 - 官方QQ群专属下载</h1>
         <nav>
-            <a href="#download">立即下载</a> |
-            <a href="#community">加入社区</a>
+            <a href="#group" class="nav-link">加入QQ群</a>
         </nav>
     </header>
 
     <div class="download-section">
-        <h2 class="section-title">🔥 最新版本下载</h2>
-        <a href="https://example.com/download" class="download-button">
-            Windows/macOS/Linux (2.1.0)
-        </a>
-        <p class="platform-note">扫码下载移动端：</p>
-        <img src="mobile-download-qrcode.png" alt="移动端下载二维码">
-    </div>
+        <h2 class="section-title">🔥 官方唯一下载通道</h2>
+        <p class="qq-group-badge">🌟 <strong>请务必通过QQ群获取最新版本</strong> 🌟</p>
+        
+        <div class="group-links">
+            <!-- QQ群二维码（建议尺寸≥300×300px） -->
+            <img src="qq-group-qr-code.png" alt="滚动的滑稽官方QQ群二维码" 
+                 style="width: 200px; margin: 20px auto;">
 
-    <section id="community" class="social-links">
-        <a href="https://qm.qq.com/q/RCr0HgJU4K" target="_blank" rel="noopener noreferrer">
-            <img src="qq-icon.png" alt="QQ群图标">
-            官方QQ群：1014648458
-        </a>
-        <a href="https://discord.gg/xxxxxx" target="_blank" rel="noopener noreferrer">
-            <img src="discord-icon.png" alt="Discord服务器">
-            Discord社区
-        </a>
-    </section>
+            <!-- QQ群文字链接 -->
+            <p><strong>QQ群号：</strong> <a href="https://qm.qq.com/q/RCr0HgJU4K" 
+                                target="_blank" rel="noopener noreferrer">
+                                1014648458 <i class="fab fa-qq" aria-hidden="true"></i>
+                            </a></p>
+        </div>
+
+        <div class="download-instructions">
+            <h3>📌 下载须知：</h3>
+            <ol>
+                <li>扫描二维码或点击链接加入官方QQ群</li>
+                <li>群文件中可直接下载最新游戏版本</li>
+                <li>优先获取限时福利和活动通知</li>
+            </ol>
+        </div>
+    </div>
 
     <footer style="margin-top: 60px; text-align: center;">
         © 2024 滚动的滑稽工作室 | 官方客服：support@example.com
