@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>滚动的滑稽 - 官方网站</title>
+    <title>滚动的滑稽 - 官方下载页</title>
     <style>
         :root {
             --primary-color: #ff6b6b;
@@ -24,82 +24,53 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .game-title {
-            text-align: center;
-            margin-bottom: 40px;
+        .download-section {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
 
-        .feature-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .download-button {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
-
-        .download-button:hover {
-            transform: scale(1.05);
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1 class="game-title">滚动的滑稽 - 开放世界沙盒游戏</h1>
+        <h1>滚动的滑稽 - 官方下载页</h1>
         <nav>
-            <a href="#features">游戏特色</a> |
             <a href="#download">立即下载</a> |
-            <a href="#community">官方社区</a>
+            <a href="#community">加入社区</a>
         </nav>
     </header>
 
-    <section id="features" class="feature-section">
-        <div class="feature-card">
-            <h2>🎮 创意工坊系统</h2>
-            <p>自由组装超过100种机械部件，创造独特交通工具</p>
-        </div>
-        <div class="feature-card">
-            <h2>🌍 多维度地图</h2>
-            <p>探索随机生成的8种地貌类型的无限世界</p>
-        </div>
-        <div class="feature-card">
-            <h2>👾 AI对手系统</h2>
-            <p>挑战50种不同性格的NPC对手</p>
-        </div>
-    </section>
-
-    <section id="download">
-        <h2>🔥 最新版本下载</h2>
+    <div class="download-section">
+        <h2 class="section-title">🔥 最新版本下载</h2>
         <a href="https://example.com/download" class="download-button">
-            Windows | macOS | Linux (2.1.0 版本)
+            Windows/macOS/Linux (2.1.0)
         </a>
-        <p>扫码下载移动端：</p>
+        <p class="platform-note">扫码下载移动端：</p>
         <img src="mobile-download-qrcode.png" alt="移动端下载二维码">
+    </div>
+
+    <section id="community" class="social-links">
+        <a href="https://qm.qq.com/q/RCr0HgJU4K" target="_blank" rel="noopener noreferrer">
+            <img src="qq-icon.png" alt="QQ群图标">
+            官方QQ群：1014648458
+        </a>
+        <a href="https://discord.gg/xxxxxx" target="_blank" rel="noopener noreferrer">
+            <img src="discord-icon.png" alt="Discord服务器">
+            Discord社区
+        </a>
     </section>
 
-    <section id="community">
-        <h2>💬 加入我们</h2>
-        <div class="social-links">
-            <a href="https://qm.qq.com/q/RCr0HgJU4K" target="_blank" rel="noopener noreferrer">
-                <img src="qq-icon.png" alt="QQ群图标">
-                官方QQ群：1014648458
-            </a>
-            <a href="https://discord.gg/xxxxxx" target="_blank" rel="noopener noreferrer">
-                <img src="discord-icon.png" alt="Discord服务器">
-                Discord社区
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 滚动的滑稽工作室. 保留所有权利.</p>
-        <p>客服邮箱：support@example.com | 官方微博：@滚动滑稽官博</p>
+    <footer style="margin-top: 60px; text-align: center;">
+        © 2024 滚动的滑稽工作室 | 官方客服：support@example.com
     </footer>
 </body>
 </html>
