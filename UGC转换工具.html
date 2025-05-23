@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UGC转换器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        textarea {
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            font-family: monospace;
+        }
+        button {
+            height: 40px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>输入UGC地编[]中的内容：</h3>
+            <textarea id="input" placeholder="粘贴UGC地编到这里..."></textarea>
+        </div>
+        
+        <div>
+            <button onclick="convert()">转换 →</button>
+        </div>
+
+        <div>
+            <h3>转换结果：</h3>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
+
+    <script>
+        function convert() {
+            try {
+                // 获取输入内容
+                const input = document.getElementById('input').value;
+                
+                // 解析JSON数组
+                const array = JSON.parse(input);
+                
+                // 处理每个元素：移除末尾逗号并添加换行
+                const result = array
+                    .map(item => item.replace(/,$/, ''))  // 移除每行末尾的逗号
+                    .join('\n');                          // 用换行符连接
+                
+                // 显示结果
+                document.getElementById('output').value = result;
+            } catch (error) {
+                alert('输入格式错误，请检查是否为有效的UGC地编格式');
+            }
+        }
+    </script>
+</body>
+</html>
